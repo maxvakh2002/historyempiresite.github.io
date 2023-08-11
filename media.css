@@ -1,0 +1,120 @@
+@media (max-width: 912px) /*Surface Pro 7*/{
+    
+    /*blocks-wrapper и info-wrapper - универсальные свойства для вертикальных экранов, располагаем элементы в колонки*/
+    
+    .blocks-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    .info-wrapper{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .titletext{
+        
+    }
+    
+    .main-menu{
+        padding-top: 0;
+    }
+    
+    .blocks1container{/*освобождаем пространство для полного раскрытия меню*/
+        padding-top: 20px;
+    }
+    
+    .email-wrapper{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .email-area{
+        /*ширина поля ввода занимает 100% от враппера*/
+        height: 450px;
+        resize: none;/*при вводе данных размер поля не изменяется*/
+        margin-bottom: 20px;
+    }
+    
+    .email-area:placeholder-shown, .email-area, select, textarea{/*регулируем положение подсказки и ввода текста в поле ввода сообщения, ставим в одну позицию*/
+        font-size: 25px;
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+    .email-submit{
+        width: 200px;
+        height: 80px;
+        border-radius: 10px;
+        border: 1px solid #000;
+    }
+
+    .email-submit-text{
+        text-decoration: none;
+        color: black;
+        font-size: 28px;
+        font-weight: 300;
+    }
+
+    /*остальные свойства элементов секций*/
+    
+    .navtext{
+        font-size: 24px;
+    }
+    
+    .blocks__content{
+        height: 800px;
+        width: 600px;
+        margin-bottom: 20px;
+        pointer-events: none;
+    }
+    
+    .blocks__subtitle{
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    
+    .info{
+        padding: 6%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .info__title{
+        font-size: 24px;
+    }
+    
+    .info__text{
+        font-size: 24px;
+        max-width: 800px;
+        font-weight: 700;
+        padding-top: 20px;
+    }
+    
+    .info__block{
+        margin-bottom: 30px;
+    }
+    
+    .info__img{
+        height: 600px;
+        width: 450px;
+    }
+    
+    .footer__wrapper{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .copyright{
+        font-size: 24px;
+    }
+    
+    .footer__soc-link img{
+        height: 45px;/*высота значков*/
+    }
+    
+}

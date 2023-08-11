@@ -1,0 +1,293 @@
+*,*:before,*:after{
+    box-sizing: border-box;/*фиксация размеров блоков*/
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Arial';
+}
+
+.body{
+    background: #fff;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;/*все элементы блока не превышают по ширине максимальную ширину контейнера. Фото и горизонтальные блоки имеют ширину в 100% от ширины контейнера.*/
+    padding-top: 60px;
+    margin: 0 auto;
+}
+
+.header-container{/*у хэдера и футера убираем верхние отступы padding-top*/
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.info-container{/*у хэдера и футера убираем верхние отступы padding-top*/
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.footer-container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/*header start*/
+
+.header{
+    background: black;
+    height: 200px;
+    padding: 20px;
+}
+
+.langmenu{
+    padding-left: 10%;
+}
+
+.langmenu li{
+    float: left;/*выстраиваем по горизонтали ссылки меню*/
+    list-style: none;
+    padding-right: 20px;
+}
+
+.langmenu li:last-child{
+    padding-right: 0;
+}
+
+.navtext{
+    color: white;
+    font-family: 'Arial';
+    font-size: 17px;
+    font-weight: 900;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.navtext:hover{
+    color: red;
+}
+
+#checkmenu{/*убираем кнопку с галочкой - проверка меню*/
+    display: none;
+}
+
+label{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.burger-block{
+    flex-direction: column;
+}
+
+.burger-line{
+    width: 65px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.burger-line:last-child{
+    margin-bottom: 0;
+}
+
+.main-menu{
+    padding-top: 20px;
+    list-style: none;
+    display: block;
+    position: absolute;
+    width: 100%;/*ширина выпадающего меню - 100% от ширины враппера*/
+    bottom: 0;/*верхние границы меню ставим ниже бургера с меню*/
+    left: 0;
+    transform: translateY(100%);/*ставим раскрытие меню ниже бургера и хэдера*/
+    max-height: 0;/*изначально, когда сайт открывается, скрываем элементы главного меню*/
+    font-size: 0;
+    overflow: hidden;
+    transition: .5s all;
+}
+
+.navlinks{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid grey;
+    background-color: black;
+}
+
+#checkmenu:checked ~ .main-menu{/*открываем меню при нажатии курсором на полоски*/
+    max-height: 160px;
+    font-size: 17px;
+}
+
+/*header end*/
+
+/*title start*/
+
+.title{
+    pointer-events: none;/*секция заголовка не перекрывает отображение кнопок при наведении на них курсора*/
+}
+
+.titletext{
+    font-size: 30px;
+    font-weight: 900;
+    padding: 4% 20% 0 20%;
+    text-align: center;
+}
+
+/*title end*/
+
+/*blocks start*/
+
+.blocks__content{
+    height: 600px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.blocks__item{
+    text-decoration: none;/*убираем подчеркивания во всем блоке*/
+}
+
+.blocks__subtitle{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.2s ease;
+}
+
+.blocks__subtitle:hover{
+    color: red;
+}
+
+/*blocks end*/
+
+/*info start*/
+
+.info{
+    padding: 4%;/*центрируем контент внутри прямоугольника*/
+    background-color: black;
+    margin-top: 60px;
+}
+
+.info__block{
+    display: flex;
+    flex-direction: column;
+}
+
+.info__title{
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.info__text{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding: 10px 0 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    max-width: 700px;
+}
+
+.info__img{
+    height: 450px;
+    width: 400px;
+}
+
+/*info end*/
+
+/*email start*/
+
+.email-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.email-title{
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.email-area{
+   /*ширина поля ввода занимает 100% от враппера*/
+    height: 250px;
+    resize: none;/*при вводе данных размер поля для сообщений не изменяется*/
+    margin-bottom: 20px;
+}
+
+.email-area:placeholder-shown, .email-area, select, textarea{/*регулируем положение подсказки и ввода текста в поле ввода сообщения, ставим в одну позицию*/
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.email-submit{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.email-submit-text{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/*email end*/
+
+/*Footer start*/
+
+.footer__wrapper{
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.copyright{
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.15em;
+}
+
+.footer__soc-link{
+    text-decoration: none;
+    margin-right: 20px;/*отступ справа между значками 20 пикселей*/
+}
+
+.footer__soc-link:last-child{
+    margin-right: 0;/*убираем отступ справа у последнего значка*/
+}
+
+.footer__soc{
+    display: flex;
+}
+
+.footer__soc-link img{
+    height: 25px;/*высота значков*/
+}
+/*Footer end*/
