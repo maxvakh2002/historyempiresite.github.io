@@ -43,6 +43,8 @@
     position: relative;
 }
 
+/*index start*/
+
 /*header start*/
 
 .header{
@@ -162,6 +164,20 @@ label{
     font-size: 30px;
     font-weight: 900;
     padding: 4% 20% 0 20%;
+    text-align: center;
+}
+
+.englishtitletext{/*для англоязычной версии сайта*/
+    font-size: 30px;
+    font-weight: 900;
+    padding: 4% 28% 0 28%;
+    text-align: center;
+}
+
+.deutschtitletext{/*для немецкоязычной версии сайта*/
+    font-size: 30px;
+    font-weight: 900;
+    padding: 4% 28% 0 28%;
     text-align: center;
 }
 
@@ -305,3 +321,56 @@ label{
     height: 35px;/*высота значков*/
 }
 /*Footer end*/
+
+/*index end*/
+
+/*contacts start*/
+
+.contacts_wrapper{
+    flex-direction: column;
+    display: flex;
+    padding-left: 30px;
+}
+
+.contacts_text{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.englishcontacts_text{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contacts_links{
+    color: blue;
+    text-decoration: none;
+}
+
+/*contacts end*/
+
+/*supportus start*/
+
+.supportus_text{
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.englishsupportus_text{
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.deutschsupportus_text{
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.supportus_links{
+    color: blue;
+    text-decoration: none;
+}
+
+/*supportus end*/
+
+
