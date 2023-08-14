@@ -479,6 +479,29 @@
     
 }
 
+@media (max-width: 720px) /*Huawei Y6s*/{
+    
+    .supportus_text{
+        font-size: 21px;
+    }
+    
+    .englishcontacts_text{
+        font-size: 21px;
+    }
+    
+    .englishsupportus_text{
+        font-size: 21px;
+    }
+    
+    .contacts_text{
+        font-size: 21px;
+    }
+    
+    .deutschcontacts_text{
+        font-size: 21px;
+    }
+}
+
 @media (max-width: 540px) /*Surface Duo*/{
     
     .header{
