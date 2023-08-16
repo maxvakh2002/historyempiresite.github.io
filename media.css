@@ -173,6 +173,12 @@
         border: 1px solid #000;
     }
     
+    .bookstitle{
+        font-size: 25px;
+        padding: 30px 0 30px 0;
+        text-align: center;
+    }
+    
 }
 
 @media (max-width: 912px) /*Surface Pro 7*/{
@@ -504,9 +510,18 @@
     }
     
     .bookstitle{
-        font-size: 36px;
+        font-size: 34px;
         padding: 30px 0 30px 0;
         text-align: center;
+    }
+    
+    .bookssubtitle{
+        font-size: 34px;
+    }
+    
+    .bookstext{
+        font-size: 30px;
+        padding: 0 3% 0 3%;
     }
     
 }
@@ -565,12 +580,18 @@
     }
     
     .bookstitle{
-        font-size: 24px;
+        font-size: 30px;
+        padding: 30px 0 30px 0;
+        text-align: center;
+    }
+    
+    .bookssubtitle{
+        font-size: 34px;
     }
     
     .bookstext{
-        font-size: 23px;
-        padding: 0 5% 0 5%;
+        font-size: 30px;
+        padding: 0 3% 0 3%;
     }
     
 }
@@ -667,7 +688,35 @@
     }
     
     .bookstitle{
-        font-size: 24px;
+        font-size: 28px;
+    }
+    
+    .bookstext{
+        font-size: 23px;
+    }
+    
+    .booksmenu_buttons{
+        padding-top: 30px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    
+    .booksmenu_btnselements{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .booksmenu_btnselements:last-child{
+        margin-bottom: 0;
+    }
+    
+    .booksmenulink{/*кнопки Назад, Вперед, Оглавление*/
+        font-size: 30px;
+    }
+    
+    .booksmenu_marker_none{
+        padding: 0 6% 0 6%;
     }
 
 }
@@ -686,6 +735,30 @@
     
     .englishsupportus_text{
         font-size: 17px;
+    }
+    
+    .booksmenu_buttons{
+        padding-top: 30px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    
+    .booksmenu_btnselements{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .booksmenu_btnselements:last-child{
+        margin-bottom: 0;
+    }
+    
+    .booksmenulink{/*кнопки Назад, Вперед, Оглавление*/
+        font-size: 30px;
+    }
+    
+    .booksmenu_marker_none{
+        padding: 0 6% 0 6%;
     }
     
 }
@@ -725,6 +798,30 @@
         margin-bottom: 20px;
     }
     
+    .booksmenu_buttons{
+        padding-top: 30px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    
+    .booksmenu_btnselements{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .booksmenu_btnselements:last-child{
+        margin-bottom: 0;
+    }
+    
+    .booksmenulink{/*кнопки Назад, Вперед, Оглавление*/
+        font-size: 30px;
+    }
+    
+    .booksmenu_marker_none{
+        padding: 0 6% 0 6%;
+    }
+    
 }
 
 @media (max-width: 375px) /*iPhone SE*/{
@@ -740,6 +837,30 @@
     
     .supportus_text{
         font-size: 15px;
+    }
+    
+    .booksmenu_buttons{
+        padding-top: 30px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    
+    .booksmenu_btnselements{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .booksmenu_btnselements:last-child{
+        margin-bottom: 0;
+    }
+    
+    .booksmenulink{/*кнопки Назад, Вперед, Оглавление*/
+        font-size: 30px;
+    }
+    
+    .booksmenu_marker_none{
+        padding: 0 6% 0 6%;
     }
 }
 
@@ -878,7 +999,8 @@
     }
     
     .bookstitle{
-        font-size: 16px;
+        font-size: 20px;
+        padding: 20px 0 20px 0;
     }
     
     .booksmenulink{
@@ -887,6 +1009,34 @@
     
     .bookstext{
         font-size: 18px;
+    }
+    
+    .bookssubtitle{
+        font-size: 20px;
+    }
+    
+    .booksmenu_buttons{
+        padding-top: 30px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    
+    .booksmenu_btnselements{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .booksmenu_btnselements:last-child{
+        margin-bottom: 0;
+    }
+    
+    .booksmenulink{/*кнопки Назад, Вперед, Оглавление*/
+        font-size: 20px;
+    }
+    
+    .booksmenu_marker_none{
+        padding: 0 6% 0 6%;
     }
     
 }
