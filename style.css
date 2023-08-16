@@ -381,7 +381,7 @@ label{
     align-items: center;
 }
 
-.booksmenulink{
+.booksmenulink{/*кнопки Назад, Вперед, Оглавление*/
     font-size: 26px;
     color: blue;
     text-decoration: none;
@@ -418,8 +418,25 @@ label{
     padding: 30px 0 30px 0;
 }
 
+.bookssubtitle{
+    font-size: 24px;
+    text-align: center;
+}
+
+.booksmenu_buttons{
+    padding: 70px 0 20px 0;
+}
+
 .bookstext{
     font-size: 26px;
+}
+
+.booksmenu_btnselements{
+    margin-right: 30px;
+}
+
+.booksmenu_btnselements:last-child{
+    margin-right: 0;
 }
 
 /*booksmenu end*/
