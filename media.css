@@ -85,6 +85,32 @@
     }
     
     /*contacts end*/
+    
+    /*booksmenu start*/
+    
+    .booksmenu_text{
+        font-size: 28px;
+        padding: 6% 10% 0 10%;
+    }
+    
+    .booksmenu_links{
+        text-decoration: none;
+        font-size: 20px;
+        color: green;
+    }
+    
+    .bookstitle{
+        font-size: 24px;
+        padding: 30px 0 30px 0;
+    }
+
+    .bookstext{
+        font-size: 24px;
+        padding: 0 2% 0 2%;
+    }
+    
+    /*booksmenu start*/
+
 }
 
 @media (max-width: 1024px)/*Nest Hub*/{
@@ -477,29 +503,12 @@
         max-width: 475px;
     }
     
-}
-
-@media (max-width: 720px) /*Huawei Y6s*/{
-    
-    .supportus_text{
-        font-size: 21px;
+    .bookstitle{
+        font-size: 36px;
+        padding: 30px 0 30px 0;
+        text-align: center;
     }
     
-    .englishcontacts_text{
-        font-size: 21px;
-    }
-    
-    .englishsupportus_text{
-        font-size: 21px;
-    }
-    
-    .contacts_text{
-        font-size: 21px;
-    }
-    
-    .deutschcontacts_text{
-        font-size: 21px;
-    }
 }
 
 @media (max-width: 540px) /*Surface Duo*/{
@@ -553,6 +562,15 @@
     
     .supportus_text{
         font-size: 24px;
+    }
+    
+    .bookstitle{
+        font-size: 24px;
+    }
+    
+    .bookstext{
+        font-size: 23px;
+        padding: 0 5% 0 5%;
     }
     
 }
@@ -646,6 +664,10 @@
     
     .englishsupportus_text{
         font-size: 18px;
+    }
+    
+    .bookstitle{
+        font-size: 24px;
     }
 
 }
@@ -850,6 +872,9 @@
         margin-bottom: 0;
     }
     
+    .bookstext{
+        font-size: 21px;
+    }
     
 }
 

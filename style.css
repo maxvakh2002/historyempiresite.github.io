@@ -342,7 +342,7 @@ label{
     margin-bottom: 20px;
 }
 
-.contacts_links{
+.links{
     color: blue;
     text-decoration: none;
 }
@@ -373,4 +373,53 @@ label{
 
 /*supportus end*/
 
+/*booksmenu start*/
 
+.booksmenuwrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booksmenulink{
+    font-size: 26px;
+    color: blue;
+    text-decoration: none;
+    padding-top: 4%;
+}
+
+.booksmenutitle{
+    font-size: 40px;
+    padding: 30px 0 30px 0;
+}
+
+.booksmenu_text{
+    font-size: 28px;
+    padding-top: 6%;
+}
+
+.booksmenu_marker_none{
+    margin-top: 20px;
+    list-style: none;
+}
+
+.booksmenu_links{
+    text-decoration: none;
+    font-size: 24px;
+    color: green;
+}
+
+.booksmenu_elements{
+    margin-bottom: 20px;
+}
+
+.bookstitle{
+    font-size: 28px;
+    padding: 30px 0 30px 0;
+}
+
+.bookstext{
+    font-size: 26px;
+}
+
+/*booksmenu end*/
