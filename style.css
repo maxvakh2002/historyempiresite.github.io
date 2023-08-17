@@ -440,4 +440,57 @@ label{
     margin-right: 0;
 }
 
+/*раздел для аккордеона с подзаголовками глав*/
+.list-content{/*лист с контентом*/
+    padding: 20px 0 40px 0;
+}
+
+.hidden{/*контент по умолчанию скрыт*/
+    display: none;
+}
+
+.arrow{
+    height: 50px;
+    width: 50px;
+}
+
+.accordeonpart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.accordeonpart:last-child{
+    margin-bottom: 0;
+}
+
+.subtitleandarrow{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.accordeon_line{
+    width: 500px;
+    border: 1px solid grey;
+}
+
+.jsarrow{
+    height: 65px;
+    width: 65px;
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(180deg);/*переворачиваем стрелку наверх*/
+    cursor: pointer;
+    padding: 10px 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background: linear-gradient(white, 40%, blue);
+}
+
 /*booksmenu end*/
