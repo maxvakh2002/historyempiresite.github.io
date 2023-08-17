@@ -421,6 +421,7 @@ label{
 .bookssubtitle{
     font-size: 24px;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .booksmenu_buttons{
@@ -449,11 +450,6 @@ label{
     display: none;
 }
 
-.arrow{
-    height: 50px;
-    width: 50px;
-}
-
 .accordeonpart{
     display: flex;
     flex-direction: column;
@@ -466,31 +462,28 @@ label{
 .accordeonpart:last-child{
     margin-bottom: 0;
 }
-
-.subtitleandarrow{
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
-}
-
 .accordeon_line{
-    width: 500px;
+    width: 600px;
     border: 1px solid grey;
 }
 
 .jsarrow{
-    height: 65px;
-    width: 65px;
+    height: 55px;
+    width: 100px;
     position: fixed;
     left: 20px;
-    top: 50%;
+    top: 90%;
     transform: translateY(-50%);
-    transform: rotate(180deg);/*переворачиваем стрелку наверх*/
     cursor: pointer;
-    padding: 10px 10px;
     border: 2px solid #000;
     border-radius: 10px;
+    padding: 15px 20px 15px 17px;
     background: linear-gradient(white, 40%, blue);
+    z-index: 1;
+}
+
+.jsarrowtext{
+    font-size: 18px;
 }
 
 /*booksmenu end*/

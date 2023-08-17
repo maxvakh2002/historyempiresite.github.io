@@ -109,6 +109,16 @@
         padding: 0 2% 0 2%;
     }
     
+    .jsarrow{
+        height: 65px;
+        width: 120px;
+        padding: 20px 30px 20px 23px;
+    }
+    
+    .jsarrowtext{
+        font-size: 20px;
+    }
+    
     /*booksmenu start*/
 
 }
@@ -403,6 +413,16 @@
     font-size: 32px;
 }
     
+    .jsarrow{
+        height: 90px;
+        width: 190px;
+        padding: 25px 40px 20px 35px;
+    }
+    
+    .jsarrowtext{
+        font-size: 33px;
+    }
+    
 }
 
 @media (max-width: 820px) /*iPad Air*/{
@@ -478,6 +498,16 @@
     .info__text{
         font-size: 30px;
         font-weight: 500;
+    }
+    
+    .jsarrow{
+        height: 90px;
+        width: 190px;
+        padding: 25px 40px 20px 43px;
+    }
+    
+    .jsarrowtext{
+        font-size: 28px;
     }
 
 }
@@ -640,6 +670,16 @@
     
     .booksmenu_btnselements:last-child{
         padding-bottom: 0;
+    }
+    
+    .jsarrow{
+        height: 60px;
+        width: 150px;
+        padding: 13px 25px 15px 25px;
+    }
+    
+    .jsarrowtext{
+        font-size: 28px;
     }
     
 }
@@ -1088,6 +1128,16 @@
     
     .booksmenu_marker_none{
         padding: 0 6% 0 6%;
+    }
+    
+    .jsarrow{
+        height: 45px;
+        width: 100px;
+        padding: 10px 15px 10px 15px;
+    }
+    
+    .jsarrowtext{
+        font-size: 20px;
     }
     
 }
