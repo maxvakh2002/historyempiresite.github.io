@@ -456,15 +456,17 @@ label{
     align-items: center;
     cursor: pointer;
     margin-bottom: 40px;
-    position: relative;
 }
 
 .accordeonpart:last-child{
     margin-bottom: 0;
 }
 .accordeon_line{
-    width: 600px;
+    width: 770px;
     border: 1px solid grey;
 }
 
+.cursive{/*настройка курсива для цитат*/
+    font-style: italic;
+}
 /*booksmenu end*/
