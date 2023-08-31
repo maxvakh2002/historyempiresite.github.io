@@ -686,6 +686,11 @@
 
 @media (max-width: 414px) /*Samsung Galaxy (414px) & iPhone XR (412px)*/{
     
+    .slider-img{
+        width: 300px;
+        height: 410px;
+    }
+    
     .burger-line{
         width: 55px;
     }
@@ -855,6 +860,7 @@
 
 @media (max-width: 390px) /*iPhone 12 Pro*/{
     
+    
     .info__block{
         font-size: 22px;
         padding-left: 20px;
@@ -917,7 +923,7 @@
 @media (max-width: 375px) /*iPhone SE*/{
     
     .langmenutext{
-        font-size: 17px;
+        font-size: 16px;
     }
     
     .contacts_text{
@@ -956,6 +962,11 @@
 
 @media (max-width: 360px) /*Samsung Galaxy S8*/{
     
+    .slider-img{
+        width: 250px;
+        height: 360px;
+    }
+    
     .langmenutext{
         font-size: 15px;
     }
@@ -983,6 +994,15 @@
 }
 
 @media (max-width: 280px) /*Galaxy Fold*/{
+    
+    .slider-img{
+        width: 200px;
+        height: 260px;
+    }
+    
+    .sliderstitle{
+        font-size: 24px;
+    }
     
     .langmenu{
         padding-left: 0;

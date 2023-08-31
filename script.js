@@ -12,75 +12,68 @@ function showContent() {/*при нажатии на кнопку програм
 
 /*slider start*/
 
-const slider = document.querySelector('#slider');/*в переменную записываем значение селектора, выбирающего элементы с id slider*/
+const sliderImages = document.querySelectorAll('.slider_img'),
+sliderLine = document.querySelector('.slider_line'),
+sliderDots = document.querySelectorAll('.slider_dot'),
+sliderBtnPrev = document.querySelector('.slider_btn-prev'),
+sliderBtnNext = document.querySelector('.slider_btn-next');
 
-const sliderItems = Array.from(slider.children);/*присваиваем переменной значение дочерних элементов HTML-коллекции SliderItems и сразу же превращаем HTML-коллекцию в массив*/
+let SliderCount = 0,
+    SliderWidth;
 
-const btnsecond = document.querySelector("#btnsecond");/*в переменную записываем значение селектора, выбирающего элемент с id "btnsecond" (кнопка Вперед)*/
+window.addEventListener('resize', ShowSlide);
 
-const btnfirst = document.querySelector("#btnfirst");/*в переменную записываем значение селектора, выбирающего элемент с id "btnsecond" (кнопка Вперед)*/
+sliderBtnNext.addEventListener('click', nextSlide);
+sliderBtnPrev.addEventListener('click', prevSlide);
 
-/*работа со слайдами*/
+function ShowSlide(){
+    SliderWidth = document.querySelector('.slider').offsetWidth; /*задаем SliderWidth значение ширины slider, полученное через querySelector*/
+    sliderLine.style.width = SliderWidth * sliderImages.length + 'px';/*длине sliderLine присваиваем значение SliderWidth умноженное на длину массива sliderImages*/
+    sliderImages.forEach(item => item.style.width = SliderWidth + 'px');/*применяется при изменении экрана*/
+    
+    rollSlider();
+}
 
-sliderItems.forEach(function(slide, index){/*обходим все элементы массива SliderItems при помощи метода forEach*/
-    
-    /*если открыты слайды с индексом, не равным 0 (не первые слайды), то их скрываем*/
-    if(index !==0) slide.classList.add('hidden');
-    
-    /*добавляем индексы для каждого слайда*/
-    slide.dataset.index = index;
-    
-    /*добавляем дата-атрибут active для первого/активного слайда*/
-    sliderItems[0].setAttribute('data-active', '');
-    
-    /*клик по слайду*/
-    slide.addEventListener('click', function(){
-        showNextSlide('next');
-    })
-    
-});
+ShowSlide();
 
-/*работа с кнопками*/
-
-btnsecond.onclick = function(){
+function nextSlide(){
     
-    showNextSlide('next');
-} 
-
-btnfirst.onclick = function(){
-    
-    showNextSlide('prev');
-} 
-
-function showNextSlide(direction){
-    
-    /*скрываем текущий слайд*/
-    const currentSlide = slider.querySelector('[data-active]');
-    const currentSlideIndex = +currentSlide.dataset.index;/*получаем через dataset индекс текущего элемента*/
-    
-    /*применяем класс hidden и убираем атрибут data-active*/
-    currentSlide.classList.add('hidden');
-    currentSlide.removeAttribute('data-active');
-    
-    /*рассчитываем следующий индекс в зависимости от направления движения, заданного кнопкой*/
-    
-    let nextSlideIndex;
-    
-    if(direction === 'next'){
-        nextSlideIndex = currentSlideIndex + 1 === sliderItems.length ? 0: currentSlideIndex + 1;
-    }
-    else if(direction === 'prev'){
-        nextSlideIndex = currentSlideIndex === 0 ? sliderItems.length - 1 : currentSlideIndex - 1;
+    SliderCount++;
+    if(SliderCount >= sliderImages.length){
+        SliderCount = 0;
     }
     
-    /*Включаем следующий слайд*/
-    
-    const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`);/*присваиваем переменной nextSlide querySelector, который работает с каждым следующим индексом элементов массива, находим следующий слайд*/
-    
-    nextSlide.classList.remove('hidden');/*убираем у каждого следующего слайда класс hidden*/
-        
-    nextSlide.setAttribute('data-active', '');/*переносим data-active на следующий, активный слайд*/
+    rollSlider();
+    thisSlide(SliderCount);
     
 }
+
+function prevSlide(){
+    
+    SliderCount--;
+    if(SliderCount < 0){
+        SliderCount = sliderImages.length - 1;
+    }
+    
+    rollSlider();
+    thisSlide(SliderCount);
+}
+
+function rollSlider(){
+    sliderLine.style.transform = `translateX(${-SliderCount * SliderWidth}px)`;
+}
+
+function thisSlide(index){
+    sliderDots.forEach(item => item.classList.remove('active_dot'));
+    sliderDots[index].classList.add('active_dot');
+}
+
+sliderDots.forEach((dot, index) => {
+    dot.addEventListener('click', () =>{
+        SliderCount = index;
+        rollSlider();
+        thisSlide(SliderCount);
+    })
+})
 
 /*slider end*/
