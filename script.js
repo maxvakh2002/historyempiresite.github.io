@@ -77,3 +77,4 @@ sliderDots.forEach((dot, index) => {
 })
 
 /*slider end*/
+

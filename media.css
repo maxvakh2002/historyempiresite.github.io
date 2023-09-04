@@ -509,6 +509,10 @@
     .jsarrowtext{
         font-size: 28px;
     }
+    
+    .letterssubtitle{
+        padding: 4% 0 4% 0;
+    }
 
 }
 
@@ -682,6 +686,15 @@
         font-size: 28px;
     }
     
+    .letters_imgtext{
+        font-size: 20px;
+    }
+    
+    .lettersimg_license{
+        font-size: 18px;
+        padding: 2% 2% 2% 2%;
+    }
+    
 }
 
 @media (max-width: 414px) /*Samsung Galaxy (414px) & iPhone XR (412px)*/{
@@ -813,6 +826,10 @@
         width: 95%;
         border: 1px solid grey;
     }
+    
+    .lettersli_text{
+        padding-left: 8%;
+    }
 
 }
 
@@ -854,6 +871,11 @@
     
     .booksmenu_marker_none{
         padding: 0 6% 0 6%;
+    }
+    
+    .letterssubtitle{
+        font-size: 25px;
+        padding: 2% 0 2% 0;
     }
     
 }
@@ -916,6 +938,11 @@
     
     .booksmenu_marker_none{
         padding: 0 6% 0 6%;
+    }
+    
+    .letterssubtitle{
+        font-size: 30px;
+        padding: 6% 2% 6% 2%;
     }
     
 }
@@ -1158,6 +1185,30 @@
     
     .jsarrowtext{
         font-size: 20px;
+    }
+    
+    .letters_imgtext{
+        font-size: 12px;
+    }
+    
+    .accordeon_line{
+        width: 80%;
+        border: 1px solid grey;
+    }
+    
+    .letterssubtitle{
+        font-size: 20px;
+        padding: 6% 0 6% 0;
+    }
+    
+    .lettersimg_license{
+        font-size: 13px;
+    }
+    
+    .letters_img{
+        width: 100%;
+        height: 100%;
+        padding: 6% 3% 6% 3%;
     }
     
 }
