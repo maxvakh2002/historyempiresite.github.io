@@ -683,6 +683,10 @@ label{
     margin-bottom: 20px;
 }
 
+.letters_list{
+    text-align: center;
+}
+
 .letters_punkts{
     list-style: none;
 }
