@@ -19,36 +19,11 @@
     }
     
     .blocks1container{
-        padding: 0 30px 30px 30px;
+        padding: 80px 30px 30px 30px;
     }
     
     .blocks2container{
         padding: 0 30px 0 30px;
-    }
-    
-    .email-wrapper{
-        width: 80%;
-        margin: 0 auto;
-    }
-    
-    .email-submit{
-        width: 150px;
-        height: 60px;
-        border-radius: 10px;
-        border: 1px solid #000;
-    }
-
-    .email-submit-text{
-        text-decoration: none;
-        color: black;
-        font-size: 22px;
-        font-weight: 300;
-    }
-    
-    .email-area:placeholder-shown, .email-area, select, textarea{/*регулируем положение подсказки и ввода текста в поле ввода сообщения, ставим в одну позицию*/
-        padding-top: 15px;
-        padding-left: 15px;
-        font-size: 24px;
     }
     
     .footer__wrapper{
@@ -72,15 +47,6 @@
     }
     
     .contacts_text:last-child{
-        margin-bottom: 0;
-    }
-    
-    .englishcontacts_text{
-        font-size: 27px;
-        margin-bottom: 40px;
-    }
-    
-    .englishcontacts_text:last-child{
         margin-bottom: 0;
     }
     
@@ -172,15 +138,15 @@
     }
     
     .blocks1container{
-        margin-top: 40px;
+        margin-top: 60px;
     }
     
     .blocks2container{
         margin-top: 40px;
     }
     
-    .email-area:placeholder-shown, .email-area, select, textarea{/*регулируем положение подсказки и ввода текста в поле ввода сообщения, ставим в одну позицию*/
-        border: 1px solid #000;
+    .letterswrapper{
+        padding: 5% 37% 0 37%;
     }
     
     .bookstitle{
@@ -195,6 +161,10 @@
     
     /*blocks-wrapper и info-wrapper - универсальные свойства для вертикальных экранов, располагаем элементы в колонки*/
     
+    .blocks1container{
+        padding: 200px 30px 30px 30px;
+    }
+    
     .blocks-wrapper{
         display: flex;
         flex-direction: column;
@@ -206,6 +176,10 @@
         display: flex;
         flex-direction: column;
         position: relative;
+    }
+    
+    .lettersblock{
+        padding-left: 28%;
     }
     
     /*остальные свойства элементов секций*/
@@ -306,36 +280,6 @@
         width: 450px;
     }
     
-    .email-wrapper{
-        width: 80%;
-        margin: 0 auto;
-    }
-    
-    .email-area{
-        /*ширина поля ввода занимает 100% от враппера*/
-        height: 450px;
-        resize: none;/*при вводе данных размер поля не изменяется*/
-        margin-bottom: 20px;
-    }
-    
-    .email-area:placeholder-shown, .email-area, select, textarea{/*регулируем положение подсказки и ввода текста в поле ввода сообщения, ставим в одну позицию*/
-        font-size: 25px;
-    }
-
-    .email-submit{
-        width: 200px;
-        height: 80px;
-        border-radius: 10px;
-        border: 1px solid #000;
-    }
-
-    .email-submit-text{
-        text-decoration: none;
-        color: black;
-        font-size: 28px;
-        font-weight: 300;
-    }
-    
     .footer__wrapper{
         width: 80%;
         margin: 0 auto;
@@ -349,9 +293,8 @@
         height: 65px;/*высота значков*/
     }
     
-    .englishtitletext{
-        font-size: 38px;
-        padding: 4% 21% 0 21%;
+    .letterswrapper{
+        padding: 5% 15% 0 15%;
     }
     
     .titletext{
@@ -364,15 +307,6 @@
     .contacts_text{
         font-size: 32px;
         margin-bottom: 60px;
-    }
-    
-    .englishcontacts_text{
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-    
-    .englishcontacts_text:last-child{
-        margin-bottom: 0;
     }
     
 /*contacts end*/
@@ -490,9 +424,8 @@
         max-width: 475px;
     }
     
-    .email-area{
-        border: 2px solid #000;
-        margin-bottom: 40px;
+    .letterswrapper{
+        padding: 5% 10% 0 10%;
     }
     
     .info__text{
@@ -517,11 +450,6 @@
 }
 
 @media (max-width: 768px) /*iPad Mini*/{
-    
-    .email-area{
-        border: 2px solid #000;
-        margin-bottom: 40px;
-    }
     
     .footer__wrapper{
         height: 200px;
@@ -600,8 +528,8 @@
         padding-left: 0;
     }
     
-    .langmenu{
-        padding-bottom: 40px;
+    .lettersblock{
+        padding-left: 17%;
     }
     
     .titletext{
@@ -616,7 +544,7 @@
     .blocks__subtitle{
         font-size: 40px;
     }
-    
+
     .info__img{
         height: 420px;
         width: 390px;
@@ -699,6 +627,16 @@
 
 @media (max-width: 414px) /*Samsung Galaxy (414px) & iPhone XR (412px)*/{
     
+    .aboutauthortext{
+        font-size: 20px;
+        font-weight: 400;
+        padding: 25px 0 0 25px;
+    }
+
+    .aboutauthortext_points{
+        padding: 30px 0 0 30px;
+    }
+    
     .slider-img{
         width: 300px;
         height: 410px;
@@ -708,8 +646,8 @@
         width: 55px;
     }
     
-    .langmenutext{
-        font-size: 20px;
+    .lettersblock{
+        padding-left: 10%;
     }
     
     .navtext{
@@ -741,7 +679,7 @@
     }
     
     .blocks1container{
-        padding-bottom: 0;
+        padding: 20px 0 0 0;
     }
     
     .blocks2container{
@@ -775,22 +713,16 @@
         font-size: 20px;
     }
     
-    .englishtitletext{
-        font-size: 30px;
-        padding: 6% 15% 0 15%;
-    }
-    
-    .englishcontacts_text{
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-    
     .supportus_text{
         font-size: 18px;
     }
     
     .englishsupportus_text{
         font-size: 18px;
+    }
+    
+    .blocks__subtitle{
+        font-size: 26px;
     }
     
     .bookstitle{
@@ -994,8 +926,8 @@
         height: 360px;
     }
     
-    .langmenutext{
-        font-size: 15px;
+    .lettersblock{
+        padding-left: 7%;
     }
     
     .blocks__subtitle{
@@ -1014,10 +946,6 @@
         font-size: 17px;
     }
     
-    .englishcontacts_text{
-        font-size: 15px;
-    }
-    
 }
 
 @media (max-width: 280px) /*Galaxy Fold*/{
@@ -1031,12 +959,8 @@
         font-size: 24px;
     }
     
-    .langmenu{
-        padding-left: 0;
-    }
-    
-    .langmenutext{
-        font-size: 20px;
+    .lettersblock{
+        padding-left: 1%;
     }
     
     label{
@@ -1082,25 +1006,7 @@
     .footer__soc-link img{
         height: 35px;/*высота значков*/
     }
-    
-    .email-area:placeholder-shown, .email-area, select, textarea{
-        font-size: 15px;
-    }
-    
-    .email-submit{
-        width: 130px;
-        height: 50px;
-        border-radius: 10px;
-        border: 1px solid #000;
-    }
 
-    .email-submit-text{
-        text-decoration: none;
-        color: black;
-        font-size: 16px;
-        font-weight: 300;
-    }
-    
     .contacts_wrapper{
         padding-left: 20px;
     }
@@ -1113,21 +1019,6 @@
     .supportus_text{
         font-size: 12px;
         margin-bottom: 20px;
-    }
-    
-    .englishtitletext{
-        font-size: 19px;
-        padding: 4% 10% 0 10%;
-    }
-    
-    .englishcontacts_text{
-        font-size: 14px;
-        margin-bottom: 20px;
-    }
-    
-    .englishsupportus_text{
-        font-size: 12px;
-        margin-bottom: 0;
     }
     
     .booksmenu_buttons{
@@ -1211,6 +1102,9 @@
         padding: 6% 3% 6% 3%;
     }
     
+    .letterswrapper{
+        padding: 5% 5% 0 5%;
+    }
 }
 
 /*index end*/

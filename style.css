@@ -167,20 +167,6 @@ label{
     text-align: center;
 }
 
-.englishtitletext{/*для англоязычной версии сайта*/
-    font-size: 30px;
-    font-weight: 900;
-    padding: 4% 28% 0 28%;
-    text-align: center;
-}
-
-.deutschtitletext{/*для немецкоязычной версии сайта*/
-    font-size: 30px;
-    font-weight: 900;
-    padding: 4% 28% 0 28%;
-    text-align: center;
-}
-
 /*title end*/
 
 /*blocks start*/
@@ -189,6 +175,10 @@ label{
     height: 600px;
     width: 400px;
     margin-bottom: 20px;
+}
+
+.blocks1container{
+    padding: 100px 0 0 0;
 }
 
 .blocks__item{
@@ -241,53 +231,17 @@ label{
     max-width: 700px;
 }
 
+.info__text__link{
+    text-decoration: none;
+    color: skyblue;
+}
+
 .info__img{
     height: 450px;
     width: 400px;
 }
 
 /*info end*/
-
-/*email start*/
-
-.email-wrapper{
-    display: flex;
-    flex-direction: column;
-}
-
-.email-title{
-    font-size: 24px;
-    font-weight: 900;
-    margin-bottom: 40px;
-}
-
-.email-area{
-   /*ширина поля ввода занимает 100% от враппера*/
-    height: 250px;
-    resize: none;/*при вводе данных размер поля для сообщений не изменяется*/
-    margin-bottom: 40px;
-}
-
-.email-area:placeholder-shown, .email-area, select, textarea{/*регулируем положение подсказки и ввода текста в поле ввода сообщения, ставим в одну позицию*/
-    padding-top: 15px;
-    padding-left: 15px;
-}
-
-.email-submit{
-    width: 100px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid #000;
-}
-
-.email-submit-text{
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-/*email end*/
 
 /*Footer start*/
 
@@ -324,6 +278,32 @@ label{
 
 /*index end*/
 
+/*aboutauthors start*/
+
+.aboutauthortext{
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.aboutauthortext_points{
+    padding: 30px 0 0 30px;
+}
+
+/*aboutauthors end*/
+
+/*letterswrapper start*/
+
+.letterswrapper{
+    padding: 5% 40% 0 40%;
+}
+
+.lettersblock{
+    padding-top: 25px;
+}
+
+/*letterswrapper end*/
+
 /*contacts start*/
 
 .contacts_wrapper{
@@ -333,11 +313,6 @@ label{
 }
 
 .contacts_text{
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.englishcontacts_text{
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -356,16 +331,6 @@ label{
     margin-bottom: 30px;
 }
 
-.englishsupportus_text{
-    font-size: 34px;
-    margin-bottom: 30px;
-}
-
-.deutschsupportus_text{
-    font-size: 34px;
-    margin-bottom: 30px;
-}
-
 .supportus_links{
     color: blue;
     text-decoration: none;
@@ -379,6 +344,20 @@ label{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.bookimg{
+    width: 200px;
+    height: 300px;
+}
+
+.bookimg_horisontal{
+    width: 230px;
+    height: 170px;
+}
+
+.bookimgsubtitle{
+    font-size: 14px;
 }
 
 .booksmenulink{/*кнопки Назад, Вперед, Оглавление*/
@@ -556,6 +535,7 @@ label{
 .mainwrapper{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .sliderpunkt{/*ссылки в списке с названиями конференций*/
@@ -576,7 +556,8 @@ label{
 .sliderslinktext{
     color: blue;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 20px;
+    text-align: center;
 }
 
 /*photo-conferences end*/
@@ -657,23 +638,6 @@ label{
 
 /*lettersmenu start*/
 
-.searchinput_center{
-    text-align: center;
-}
-
-.searchinput{
-    width: 80%;
-    height: 50px;
-    border-radius: 10px;
-    border: 1px solid black;
-}
-
-.searchinput:placeholder-shown, .searchinput, select, textarea{/*регулируем положение подсказки и ввода текста в поле ввода сообщения, ставим в одну позицию*/
-    padding-top: 5px;
-    padding-left: 15px;
-    font-size: 20px;
-}
-
 .margintop{
     margin-top: 50px;
 }
@@ -698,3 +662,17 @@ label{
 }
 
 /*lettersmenu end*/
+
+/*video start*/
+
+.video{
+    width: 280px;
+    height: 215px;
+    margin-bottom: 20px;
+}
+
+.video:last-child{
+    margin-bottom: 0;
+}
+
+/*video end*/
