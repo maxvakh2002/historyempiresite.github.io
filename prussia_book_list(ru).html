@@ -17,38 +17,17 @@
    
    <header class="header">
       
-      <div class="header-container">
+      <div class="hif-container">
        
-       <div class="wrapper">
-         
-         <input type="checkbox" id="checkmenu">
-         <label for="checkmenu"></label>
-         
+       <div class="header_wrapper">
+
+        <a href="index.html"><img src="img/newlogo.png" class="logo"></a><!--стилизуем лого в media-->  
+                    
          <div class="burger-block">
             
-          <div class="burger-line"></div>
-          <div class="burger-line"></div>
-          <div class="burger-line"></div>
+         <a href="my_acc.html" class="navtext">Мои площадки</a>
              
          </div><!--/burger-block-->
-          
-         <nav class="main-menu">
-             <li>
-                
-                 <ul>
-                 <a href="index.html" class="navtext navlinks">Главная</a></ul>
-                 
-                 <ul>
-                 <a href="contacts.html" class="navtext navlinks">Контакты</a></ul>
-                 
-                 <ul>
-                 <a href="supportus.html" class="navtext navlinks">Поддержать нас</a>
-                 </ul>
-                 
-             </li>
-         </nav>
-         
-        <img src="img/%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BB%D0%BE%D0%B3%D0%BE.png" alt="" class="logo"><!--стилизуем лого в media-->
          
        </div><!--/wrapper-->
         
@@ -62,22 +41,22 @@
          
          <div class="booksmenuwrapper">
            
-               <a href="booksmenu(rus).html" class="booksmenulink">Назад</a>
+               <a href="publicationmenu.html" class="menulink">Назад</a>
                
                <h1 class="booksmenutitle">Оглавление</h1>
                
                <ul class="booksmenu_marker_none"><!--убираем у пунктов маркеры-->
-                   <li class="booksmenu_elements"><a href="prussia_book_1(rus).html" class="booksmenu_links">Вместо предисловия. Сравнение исторических путей России и Пруссии</a></li>
-                   <li class="booksmenu_elements"><a href="prussia_book_2(rus).html" class="booksmenu_links">Наследие тевтонских рыцарей и Великого курфюрста. Рождение Прусского королевства</a></li>
-                   <li class="booksmenu_elements"><a href="prussia_book_3(rus).html" class="booksmenu_links">Суровый аскетизм короля-солдата. Прусские добродетели</a></li>
-                   <li class="booksmenu_elements"><a href="prussia_book_4(rus).html" class="booksmenu_links">Просвещенная монархия Фридриха Великого. Философия Канта</a></li>
-                   <li class="booksmenu_elements"><a href="prussia_book_5(rus).html" class="booksmenu_links">Фридрих Вильгельм II. Король-лентяй</a></li>
-                   <li class="booksmenu_elements"><a href="prussia_book_6(rus).html" class="booksmenu_links">Войны с Францией и прусские реформы</a></li>
-                   <li class="booksmenu_elements"><a href="prussia_book_7(rus).html" class="booksmenu_links">Возврат к реакции и революция 1848-1849 годов. Провал попытки мирного объединения Германии</a></li>
-                   <li class="booksmenu_elements"><a href="prussia_book_8(rus).html" class="booksmenu_links">Бисмарк и объединение Германии</a></li>
-                   <li class="booksmenu_elements"><a href="prussia_book_9(rus).html" class="booksmenu_links">Эпилог</a></li>
-                   <li class="booksmenu_elements"><a href="prussia_book_10(rus).html" class="booksmenu_links">Список литературы</a></li>
-                   <li class="booksmenu_elements"><a href="prussia_book_11(rus).html" class="booksmenu_links">Ссылки</a></li>
+                   <li class="booksmenu_elements"><a href="prussia_book_1(rus).html" class="menulink">Вместо предисловия. Сравнение исторических путей России и Пруссии</a></li>
+                   <li class="booksmenu_elements"><a href="prussia_book_2(rus).html" class="menulink">Наследие тевтонских рыцарей и Великого курфюрста. Рождение Прусского королевства</a></li>
+                   <li class="booksmenu_elements"><a href="prussia_book_3(rus).html" class="menulink">Суровый аскетизм короля-солдата. Прусские добродетели</a></li>
+                   <li class="booksmenu_elements"><a href="prussia_book_4(rus).html" class="menulink">Просвещенная монархия Фридриха Великого. Философия Канта</a></li>
+                   <li class="booksmenu_elements"><a href="prussia_book_5(rus).html" class="menulink">Фридрих Вильгельм II. Король-лентяй</a></li>
+                   <li class="booksmenu_elements"><a href="prussia_book_6(rus).html" class="menulink">Войны с Францией и прусские реформы</a></li>
+                   <li class="booksmenu_elements"><a href="prussia_book_7(rus).html" class="menulink">Возврат к реакции и революция 1848-1849 годов. Провал попытки мирного объединения Германии</a></li>
+                   <li class="booksmenu_elements"><a href="prussia_book_8(rus).html" class="menulink">Бисмарк и объединение Германии</a></li>
+                   <li class="booksmenu_elements"><a href="prussia_book_9(rus).html" class="menulink">Эпилог</a></li>
+                   <li class="booksmenu_elements"><a href="prussia_book_10(rus).html" class="menulink">Список литературы</a></li>
+                   <li class="booksmenu_elements"><a href="prussia_book_11(rus).html" class="menulink">Ссылки</a></li>
                </ul>
             
          </div><!--/booksmenuwrapper-->
@@ -93,20 +72,8 @@
                 <div class="footer__wrapper">
                    
                     <p class="copyright">
-                        © 2023 Copyright by Историческая империя
+                        Copyright © 2023<script>new Date().getFullYear()>2023&&document.write("-"+new Date().getFullYear());</script> by Историческая империя. <br> При использовании материалов сайта активная ссылка на страницу обязательна. 
                     </p><!--/copyright-->
-                    
-                    <div class="footer__soc"><!--иконки соцсетей-->
-                       
-                        <a href="https://vk.com/empire_of_history" class="footer__soc-link" target="_blank"><!--ссылка будет открываться в новом окне-->
-                            <img src="img/vk.svg" alt="">
-                        </a>
-                        
-                        <a href="https://www.youtube.com/channel/UCqd-bshoaV0-ZJaxYCa28YA" class="footer__soc-link" target="_blank"><!--ссылка будет открываться в новом окне-->
-                            <img src="img/youtube.svg" alt="">
-                        </a>
-
-                    </div><!--/footer__soc-->
                     
                 </div><!--/footer__wrapper-->
                 

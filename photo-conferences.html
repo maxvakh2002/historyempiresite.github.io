@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     
-    <meta name="viewport" content="width=device-width, user-scarable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><!--мета-тег для адаптивной верстки-->
+    <meta name="viewport" content="width=device-width, user-scarable=no, initial-scale=1.0, maximum-scale=1.0, 
+    minimum-scale=1.0"><!--мета-тег для адаптивной верстки-->
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
@@ -17,38 +18,17 @@
    
    <header class="header">
       
-      <div class="header-container">
+      <div class="hif-container">
        
-       <div class="wrapper">
-         
-         <input type="checkbox" id="checkmenu">
-         <label for="checkmenu"></label>
-         
+       <div class="header_wrapper">
+
+        <a href="index.html"><img src="img/newlogo.png" class="logo"></a><!--стилизуем лого в media-->  
+                    
          <div class="burger-block">
             
-          <div class="burger-line"></div>
-          <div class="burger-line"></div>
-          <div class="burger-line"></div>
+         <a href="my_acc.html" class="navtext">Мои площадки</a>
              
          </div><!--/burger-block-->
-          
-         <nav class="main-menu">
-             <li>
-                
-                 <ul>
-                 <a href="index.html" class="navtext navlinks">Главная</a></ul>
-                 
-                 <ul>
-                 <a href="contacts.html" class="navtext navlinks">Контакты</a></ul>
-                 
-                 <ul>
-                 <a href="supportus.html" class="navtext navlinks">Поддержать нас</a>
-                 </ul>
-                 
-             </li>
-         </nav>
-         
-        <img src="img/%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BB%D0%BE%D0%B3%D0%BE.png" alt="" class="logo"><!--стилизуем лого в media-->
          
        </div><!--/wrapper-->
         
@@ -60,35 +40,59 @@
      
      <div class="container">
        
-       <div class="mainwrapper">
-        
+       <div class="booksmenuwrapper">
+           
            <p class="sliderpunkt">
                
-               <a href="slider1.html" class="sliderslinktext">Фото с конференции "История - наука о будущем" 17 февраля 2023 года в МПГУ</a>
+               <a href="25-04-2023.html" class="linktext">Фото с конференции "IX Рязановские чтения" 25 апреля 2023 года в РГСУ</a>
                
            </p>
            
            <p class="sliderpunkt">
                
-               <a href="slider2.html" class="sliderslinktext">Фото с конференции "IX Рязановские чтения" 25 апреля 2023 года в РГСУ</a>
-               
-           </p>
-           
-            <p class="sliderpunkt">
-               
-               <a href="slider3.html" class="sliderslinktext">Фото с конференции "Человек, общество и книга" 25 сентября 2023 года в РГСУ</a>
+               <a href="26-09-2023.html" class="linktext">Фото и видео с конференции "Человек, общество и книга" 26 сентября 2023 года в РГСУ</a>
                
            </p>
            
            <p class="sliderpunkt">
                
-               <iframe src="https://vk.com/video_ext.php?oid=-186451583&id=456239673" width="260" height="160" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+               <a href="28-11-2024.html" class="linktext">Видео выступления на заседании исторического кружка "Лжедмитрий I – предатель, самозванец или законный <br> наследник и спаситель России?" 28 ноября 2024 года в РГСУ</a>
                
            </p>
            
            <p class="sliderpunkt">
                
-               <a href="sertificats.html" class="sliderslinktext">Сертификаты об участии в конференциях</a>
+               <a href="06-12-2024.html" class="linktext">Фото и аудиозапись выступления на круглом столе <br> «Россия в диалоге с “другими”: политика, образы, личности» 6 декабря 2024 года в МПГУ</a>
+               
+           </p>
+           
+           <p class="sliderpunkt">
+               
+               <a href="14-03-2025.html" class="linktext">Аудиозапись выступления на конференции «Интертекст: новые темы и подходы в науке» 14 марта 2025 года в МПГУ</a>
+               
+           </p>
+           
+           <p class="sliderpunkt">
+               
+               <a href="09-04-2025.html" class="linktext">Аудиозапись выступления на круглом столе «Город как пространство культуры и среда обитания человека в зеркале исторической урбанистики» 9 апреля 2025 года в МПГУ</a>
+               
+           </p>
+           
+           <p class="sliderpunkt">
+               
+               <a href="11-04-2025.html" class="linktext">Видео- и аудиозаписи выступления на конференции «Россия и мир в прошлом и настоящем» 11 апреля 2025 года в МПГУ</a>
+               
+           </p>
+           
+           <p class="sliderpunkt">
+               
+               <a href="sertificats.html" class="linktext">Сертификаты об участии в конференциях</a>
+               
+           </p>
+           
+           <p class="sliderpunkt">
+               
+               <a href="DIPLOM.pdf" class="linktext">Мой диплом бакалавра истории от 11.03.2025</a>
                
            </p>
          
@@ -105,28 +109,14 @@
                 <div class="footer__wrapper">
                    
                     <p class="copyright">
-                        © 2023 Copyright by Историческая империя
+                        Copyright © 2023<script>new Date().getFullYear()>2023&&document.write("-"+new Date().getFullYear());</script> by Историческая империя. <br> При использовании материалов сайта активная ссылка на страницу обязательна. 
                     </p><!--/copyright-->
-                    
-                    <div class="footer__soc"><!--иконки соцсетей-->
-                       
-                        <a href="https://vk.com/empire_of_history" class="footer__soc-link" target="_blank"><!--ссылка будет открываться в новом окне-->
-                            <img src="img/vk.svg" alt="">
-                        </a>
-                        
-                        <a href="https://www.youtube.com/channel/UCqd-bshoaV0-ZJaxYCa28YA" class="footer__soc-link" target="_blank"><!--ссылка будет открываться в новом окне-->
-                            <img src="img/youtube.svg" alt="">
-                        </a>
-
-                    </div><!--/footer__soc-->
                     
                 </div><!--/footer__wrapper-->
                 
            </div><!--/container-->
            
     </footer>
-    
-    <script src="script.js"></script>
     
 </body>
 

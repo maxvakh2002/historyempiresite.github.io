@@ -8,10 +8,9 @@
     font-family: 'Arial';
 }
 
-.body{
-    background: #fff;
+body{
+    background: linear-gradient(180deg, black 220px, gold 500px);
     background-size: cover;
-    height: 100vh;
 }
 
 .container{
@@ -19,19 +18,10 @@
     width: 100%;/*все элементы блока не превышают по ширине максимальную ширину контейнера. Фото и горизонтальные блоки имеют ширину в 100% от ширины контейнера.*/
     padding-top: 60px;
     margin: 0 auto;
+    height: 100%;
 }
 
-.header-container{/*у хэдера и футера убираем верхние отступы padding-top*/
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-.info-container{/*у хэдера и футера убираем верхние отступы padding-top*/
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-.footer-container{
+.hif-container{/*у хэдера и футера убираем верхние отступы padding-top*/
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -41,6 +31,23 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    margin-bottom: 20px;
+}
+
+.blockswrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.header_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 /*index start*/
@@ -48,35 +55,11 @@
 /*header start*/
 
 .header{
-    background: black;
-    height: 200px;
+    height: 170px;
     padding: 20px;
 }
 
-.langmenu{
-    padding-left: 10%;
-}
-
-.langmenu li{
-    float: left;/*выстраиваем по горизонтали ссылки меню*/
-    list-style: none;
-    padding-right: 20px;
-}
-
-.langmenu li:last-child{
-    padding-right: 0;
-}
-
-.langmenutext{
-    color: white;
-    font-family: 'Arial';
-    font-size: 23px;
-    font-weight: 900;
-    text-decoration: none;
-    transition: color .2s ease;
-} 
-
-.navtext{
+.navtext{/*раздел меню*/
     color: white;
     font-family: 'Arial';
     font-size: 17px;
@@ -85,20 +68,15 @@
     transition: color .2s ease;
 }
 
-.langmenutext:hover{
+.navtext:hover{/*при наведении курсора на меню цвет красный вместо белого*/
     color: red;
 }
-
-.navtext:hover{
-    color: red;
-}
-
 
 #checkmenu{/*убираем кнопку с галочкой - проверка меню*/
     display: none;
 }
 
-label{
+label{/*расположение элементов в шапке сайта*/
     display: block;
     position: absolute;
     top: 0;
@@ -113,57 +91,21 @@ label{
     flex-direction: column;
 }
 
-.burger-line{
-    width: 65px;
-    height: 2px;
-    background-color: white;
-    margin-bottom: 20px;
-}
-
-.burger-line:last-child{
-    margin-bottom: 0;
-}
-
-.main-menu{
-    padding-top: 20px;
-    list-style: none;
-    display: block;
-    position: absolute;
-    width: 100%;/*ширина выпадающего меню - 100% от ширины враппера*/
-    bottom: 0;/*верхние границы меню ставим ниже бургера с меню*/
-    left: 0;
-    transform: translateY(100%);/*ставим раскрытие меню ниже бургера и хэдера*/
-    max-height: 0;/*изначально, когда сайт открывается, скрываем элементы главного меню*/
-    font-size: 0;
-    overflow: hidden;
-    transition: .5s all;
-}
-
-.navlinks{
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border-top: 1px solid grey;
-    background-color: black;
-}
-
-#checkmenu:checked ~ .main-menu{/*открываем меню при нажатии курсором на полоски*/
-    max-height: 160px;
-    font-size: 17px;
-}
-
 /*header end*/
 
 /*title start*/
 
 .title{
     pointer-events: none;/*секция заголовка не перекрывает отображение кнопок при наведении на них курсора*/
+    margin-top: 80px;
 }
 
 .titletext{
+    color: white;
     font-size: 30px;
-    font-weight: 900;
-    padding: 4% 20% 0 20%;
+    font-weight: 600;
+    padding: 0 20% 0 20%;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -172,13 +114,26 @@ label{
 /*blocks start*/
 
 .blocks__content{
-    height: 600px;
-    width: 400px;
+    height: 400px;
+    width: 250px;
     margin-bottom: 20px;
 }
 
-.blocks1container{
-    padding: 100px 0 0 0;
+.blocks__letters__content{/*для блока со статьями (1й слева на главном меню)*/
+    height: 200px;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.letters__block{
+    width: 350px;
+    display: grid;
+    grid-gap: 20px;/*расстояние между элементами в блоке 20 пикселей*/
+    justify-content: space-between;
+}
+
+.blockscontainer{
+    padding: 155px 60px 0 60px;
 }
 
 .blocks__item{
@@ -186,7 +141,7 @@ label{
 }
 
 .blocks__subtitle{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     color: black;
     text-decoration: none;
@@ -204,7 +159,6 @@ label{
 
 .info{
     padding: 4%;/*центрируем контент внутри прямоугольника*/
-    background-color: black;
     margin-top: 60px;
 }
 
@@ -214,18 +168,19 @@ label{
 }
 
 .info__title{
-    color: white;
+    color: #000;
     font-size: 35px;
     font-weight: 900;
     margin-bottom: 30px;
+    padding-left: 10px;
 }
 
 .info__text{
     display: flex;
     justify-content: center;
     text-align: left;
-    padding: 10px 0 10px;
-    color: white;
+    padding: 10px;
+    color: #000;
     font-size: 25px;
     font-weight: 700;
     max-width: 700px;
@@ -233,7 +188,12 @@ label{
 
 .info__text__link{
     text-decoration: none;
-    color: skyblue;
+    color: white;
+    transition: color .2s ease;
+}
+
+.info__text__link:hover{/*при наведении курсора на меню цвет красный вместо белого*/
+    color: red;
 }
 
 .info__img{
@@ -246,34 +206,19 @@ label{
 /*Footer start*/
 
 .footer__wrapper{
-    height: 100px;
+    height: 30vh;
     align-items: center;
     justify-content: space-between;
     display: flex;
 }
 
 .copyright{
+    color: black;
     font-weight: 400;
     font-size: 15px;
     letter-spacing: 0.1em;
 }
 
-.footer__soc-link{
-    text-decoration: none;
-    margin-right: 20px;/*отступ справа между значками 20 пикселей*/
-}
-
-.footer__soc-link:last-child{
-    margin-right: 0;/*убираем отступ справа у последнего значка*/
-}
-
-.footer__soc{
-    display: flex;
-}
-
-.footer__soc-link img{
-    height: 35px;/*высота значков*/
-}
 /*Footer end*/
 
 /*index end*/
@@ -292,17 +237,18 @@ label{
 
 /*aboutauthors end*/
 
-/*letterswrapper start*/
-
-.letterswrapper{
-    padding: 5% 40% 0 40%;
-}
+/*letters start*/
 
 .lettersblock{
     padding-top: 25px;
 }
 
-/*letterswrapper end*/
+.letters__title{
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+/*letters end*/
 
 /*contacts start*/
 
@@ -324,55 +270,32 @@ label{
 
 /*contacts end*/
 
-/*supportus start*/
-
-.supportus_text{
-    font-size: 28px;
-    margin-bottom: 30px;
-}
-
-.supportus_links{
-    color: blue;
-    text-decoration: none;
-}
-
-/*supportus end*/
-
-/*sertificats start*/
-
-.sertificats{
-    padding: 20px 0 20px 0;
-}
-
-/*sertificats end*/
-
 /*booksmenu start*/
 
 .booksmenuwrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.bookimg{
-    width: 200px;
-    height: 300px;
-}
-
-.bookimg_horisontal{
-    width: 230px;
-    height: 170px;
+    margin-top: 60px;
 }
 
 .bookimgsubtitle{
     font-size: 14px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-.booksmenulink{/*кнопки Назад, Вперед, Оглавление*/
+.menulink{/*кнопки Назад, Вперед, Оглавление*/
     font-size: 26px;
-    color: blue;
+    color: black;
     text-decoration: none;
-    padding-top: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    transition: color .2s ease;
+}
+
+.menulink:hover{
+    color: red;
 }
 
 .booksmenutitle{
@@ -396,7 +319,7 @@ label{
     color: green;
 }
 
-.booksmenu_elements{
+.menu_elements{
     margin-bottom: 20px;
 }
 
@@ -459,86 +382,7 @@ label{
 }
 /*booksmenu end*/
 
-/*slider start*/
-.sliderswrapper{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.sliderstitle{
-    text-align: center;
-    padding: 3% 0 3% 0;
-    font-size: 30px;
-}
-
-.slider{
-    position: relative;
-    overflow: hidden;
-    width: 280px;
-    height: 380px;
-}
-
-.slider_line{
-    transition: all 1s;
-    display: flex;
-    align-items: center;
-}
-
-.slider_img{
-    width: 100%;
-    height: 100%;
-}
-
-.button{
-    cursor: pointer;
-}
-
-.btn-img{
-    width: 35px;
-    height: 35px;
-}
-
-.slider_btn-prev{
-    position: absolute;
-    top: 50%;
-    left: 2%;
-}
-
-.slider_btn-next{
-    position: absolute;
-    top: 50%;
-    right: 2%;
-}
-
-.slider_wrapper{
-    position: absolute;
-    column-gap: 10px;
-    top: 90%;
-    left: 50%;
-    display: flex;
-    transform: translateX(-50%);
-}
-
-.slider_dot{
-    width: 15px;
-    height: 15px;
-    border: 2px solid orange;
-    border-radius: 20px;
-}
-
-.slider_dot:hover{
-    background-color: orange;
-    cursor: pointer;
-    transition: all .2s ease;
-}
-
-.active_dot{
-    background-color: orange;
-}
-/*slider end*/
-
-/*photo-conferences start*/
+/*publication_menu start*/
 
 .mainwrapper{
     display: flex;
@@ -546,7 +390,7 @@ label{
     align-items: center;
 }
 
-.sliderpunkt{/*ссылки в списке с названиями конференций*/
+.sliderpunkt{/*ссылки в списке с публикациями и названиями конференций*/
     text-align: center;
     margin-bottom: 30px;
 }
@@ -561,88 +405,57 @@ label{
     margin-top: 30px;
 }
 
-.sliderslinktext{
-    color: blue;
+.linktext{
+    color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
+    text-align: center;
+    transition: color .2s ease;
+}
+
+.linktext:hover{
+    color: red;
+}
+
+.slidertitle{
+    font-size: 28px;
+    padding: 30px 0 30px 0;
     text-align: center;
 }
 
-/*photo-conferences end*/
+/*publication_menu end*/
+
+/*photo_conferences start*/
+
+.conf_img{
+    padding: 30px 0 30px 0;
+    width: 540px;
+    height: 360px;
+}
+
+.audio{
+    margin-top: 20px;
+}
+
+/*photo_conferences end*/
 
 /*letters start*/
-
-.lettersaccordeonpart{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    margin-bottom: 15px;
-}
-
-.letters_img{
-    width: 100%;
-    height: 100%;
-    padding: 2% 3% 4% 3%;
-}
-
-.letters_textcenter{
-    text-align: center;
-}
-
-.letters_imgtext{
-    margin-bottom: 10px;
-    padding: 2% 2% 2% 2%;
-}
-
-.lettersimg_license{
-    font-size: 25px;
-}
-
-.imglicense_link{
-    text-decoration: none;
-}
-
-.letterssubtitle{
-    font-size: 30px;
-    padding: 2% 0 2% 0;
-}
 
 .lettersli_text{
     padding-left: 4%;
 }
 
+.letters_img{
+    padding: 20px 0 20px 0;
+}
+
+.sertificats{
+    width: 350px;
+    height: 500px;
+    padding: 40px 0 0 0;
+}
+
 /*letters end*/
-
-/*go-top start*/
-
-.go-top {
-  position: fixed; /* фиксированное позиционирование */
-  left: 20px; /* отступ слева 20px */
-  top: 90%; /* выравниваем по центру */
-  transform: translateY(-50%); /* выравниваем по центру */
-  cursor: pointer; /* при наведении меняем курсор */
-  color: rgba(0, 51, 153, 0.5);
-  border: 1px solid rgba(0, 51, 153, 0.5);
-  background-color: rgba(0, 51, 153, 0.1);
-  padding: 15px 10px;
-  font-size: 20px;/*размер стрелки*/
-  display: none;
-}
-
-/* меняем прозрачность при наведении мышкой */
-.go-top:hover {
-  color: rgba(0, 51, 153, 0.8);
-  border: 1px solid rgba(0, 51, 153, 0.8);
-  background-color: rgba(0, 51, 153, 0.15);
-}
-
-/* модификатор для отображения кнопки */
-.go-top--show {
-   display: block;
-}
-
-/*go-top end*/
 
 /*lettersmenu start*/
 
@@ -674,9 +487,14 @@ label{
 /*video start*/
 
 .video{
-    width: 280px;
-    height: 215px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 540px;
+    height: 360px;
+}
+
+.vertical_video{
+    width: 260px;
+    height: 500px;
 }
 
 .video:last-child{
